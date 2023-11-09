@@ -1,0 +1,35 @@
+// array, date, function, object 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+
+    <h1 id="demo1"></h1>
+    <h1 id="type1"></h1>
+    <h1 id="demo2"></h1>
+    <h1 id="type1"></h1>
+
+    <script>
+        const obj1= {
+            name: ["Rahim", "Karim", "Asik"],
+            age:["40","50","80"],
+            birth:[new Date("2000-03-20"),new Date("2000-03-20"),new Date("2000-03-20")],
+            person: {
+                firstname: "Mr",
+                lastname: "Karim"
+            }
+            
+            
+        }
+
+        document.getElementById("demo1").innerHTML = obj1.person["lastname"];
+        document.getElementById("demo2").innerHTML = obj1["birth"]; 
+
+    </script>
+    
+</body>
+</html>
