@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 2018</title>
+</head>
+<body>
+
+    <h1 id="demo1"></h1>
+    <h1 id="demo2"></h1>
+    <h1 id="demo3"></h1>
+
+<script>
+    
+/////////////////////////// positive and negative Lookbehind ////
+
+// const regex = /(?<=@)\w+/;
+// const result = 'user@example.com'.match(regex);
+// console.log(result);
+
+
+//////////////////////////  RE  ///////////////////////
+
+// const regex = /\p{Script=Latin}/u;
+// const result = regex.test('Jony');
+// console.log(result);
+
+
+/////////////////////////////   Rest property //////////////////
+
+// let { x, y, ...z } = { x: 1, y: 2, a: 3, b: 4 };
+// console.log(x); 
+// console.log(y);
+// console.log(z);
+
+//////////////////////////////////////////////////////////////////
+
+//////////////////////////// finally /////////////////////////////
+
+// function simulateAsyncOperation(success = true) {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       if (success) {
+//         resolve("Operation successful!");
+//       } else {
+//         reject("Error: Operation failed!");
+//       }
+//     }, 2000);
+//   });
+// }
+
+// let myPromise = simulateAsyncOperation(true);
+
+// myPromise
+//   .then(result => {
+//     console.log(result); // Handle the fulfillment
+//   })
+//   .catch(error => {
+//     console.error(error); // Handle the rejection
+//   })
+//   .finally(() => {
+//     console.log("Finally block: This will be executed regardless of fulfillment or rejection.");
+//   });
+
+//////////////////////////////////////////////////////////
+document.getElementById("demo1").innerHTML = result
+</script>
+    
+</body>
+</html>

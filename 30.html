@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Const</title>
+</head>
+<body>
+
+    <h1 id="demo1"></h1>
+    <h1 id="demo2"></h1>
+    <h1 id="demo3"></h1>
+
+    <script>
+        const q1 = ["Jan", "Feb", "Mar"];
+        // const q1 = ["Apr", "May", "Jun"];   //Error
+        document.getElementById("demo1").innerHTML = q1;
+
+        {
+            const q1 = ["1", "2", "3"];
+            document.getElementById("demo2").innerHTML = q1; 
+        }
+        
+        document.getElementById("demo3").innerHTML = q1; 
+    </script>
+    
+</body>
+</html>

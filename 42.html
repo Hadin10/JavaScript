@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 2021 and 2022</title>
+</head>
+<body>
+
+    <h1 id="demo1"></h1>
+    <h1 id="demo2"></h1>
+    <h1 id="demo3"></h1>
+
+<script>
+
+/////////////////////////// numeric seperator  ///////////////
+
+
+////////////////////////////////////////////////////////
+const prom1 = Promise.resolve('Resolved Promise 1');
+const prom2 = Promise.reject('Rejected Promise 2');
+const prom3 = new Promise((resolve, reject) => {
+  setTimeout(() => resolve('Resolved Promise 3'), 1000);
+});
+////////////////////////////  Promise.any ////////////
+async function myFunc() {
+    try {
+        const first = await Promise.any([prom1, prom2, prom3]);
+        console.log(first)
+        document.getElementById("demo1").innerHTML = 'The first promise that fulfilled:' + first;
+    } catch {
+        console.log(error)
+        document.getElementById("demo1").innerHTML = error;
+    }
+}
+
+myFunc();
+
+////////////////////////////  Promise.allSettled ////////////
+
+// Promise.allSettled([prom1, prom2, prom3])
+//   .then(results => {
+//     results.forEach(result => {
+//       if (result.status === 'fulfilled') {
+//         console.log('Fulfilled:', result.value);
+//       } else {
+//         console.log('Rejected:', result.reason);
+//       }
+//     });
+//   });
+//////////////////////////////////////////////////////////////
+
+</script>
+    
+</body>
+</html>
